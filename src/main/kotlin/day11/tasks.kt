@@ -2,8 +2,8 @@ package day11
 
 
 fun main() {
-    println("day 10 part1 ${day11Part1(getInputDay11(day11Input))}")
-    println("day 10 part2 ${day11Part2(getInputDay11(day11Input))}")
+    println("day 11 part1 ${day11Part1(getInputDay11(day11Input))}")
+    println("day 11 part2 ${day11Part2(getInputDay11(day11Input))}")
 }
 
 fun day11Part1(input: Array<CharArray>): Int {

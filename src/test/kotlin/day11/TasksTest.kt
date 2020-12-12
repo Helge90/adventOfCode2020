@@ -1,13 +1,13 @@
 package day11
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-internal class TasksTest{
+internal class TasksTest {
 
     @Test
     fun ` test day 11 part 1  `() {
-        assertEquals(37,day11Part1(getInputDay11(testInputDay11)))
+        assertEquals(37, day11Part1(getInputDay11(testInputDay11)))
     }
 
     @Test

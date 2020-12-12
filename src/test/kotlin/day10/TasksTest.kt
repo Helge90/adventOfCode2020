@@ -1,9 +1,9 @@
 package day10
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-internal class TasksTest{
+internal class TasksTest {
 
     @Test
     fun ` test day 10 part 1  `() {

@@ -4,7 +4,7 @@ fun main() {
     val lines = getInputDay7(day7Input)
     val sum = day7Part1(createBagRulesPart1(lines))
     println("day7 part1 = $sum")
-    val sum2 = findAllBags(createBagRulesPart2(lines), "shiny gold bag", 0)
+    val sum2 = findAllBags(createBagRulesPart2(lines), "shiny gold bag")
     println("day7 part2 = $sum2")
 }
 
@@ -48,10 +48,10 @@ fun createBagRulesPart2(input: List<String>): HashMap<String, List<Rules>> {
     return bagRulesPart2
 }
 
-fun findAllBags(bagRulesPart2: HashMap<String, List<Rules>>, key: String, depth: Int): Int {
+fun findAllBags(bagRulesPart2: HashMap<String, List<Rules>>, key: String): Int {
     val list = bagRulesPart2[key]
     return list?.fold(0) { acc: Int, it: Rules ->
-        val sum = (acc + (it.number + (it.number * findAllBags(bagRulesPart2, it.value, depth + 1))))
+        val sum = (acc + (it.number + (it.number * findAllBags(bagRulesPart2, it.value))))
         sum
     } ?: 0
 }

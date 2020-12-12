@@ -1,9 +1,9 @@
 package day6
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-internal class TasksTest{
+internal class TasksTest {
 
     @Test
     fun ` test day 6 part 1  `() {
@@ -17,19 +17,19 @@ internal class TasksTest{
 }
 
 val testInputDay6 = """
-                    abc
-                    
-                    a
-                    b
-                    c
-                    
-                    ab
-                    ac
-                    
-                    a
-                    a
-                    a
-                    a
-                    
-                    b
-                    """.trimIndent()
+abc
+
+a
+b
+c
+
+ab
+ac
+
+a
+a
+a
+a
+
+b
+""".trimIndent()

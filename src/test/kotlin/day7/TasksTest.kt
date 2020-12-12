@@ -1,22 +1,22 @@
 package day7
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-internal class TasksTest{
+internal class TasksTest {
 
     @Test
     fun ` test day 7 part 1  `() {
-        assertEquals(5,2)
+        assertEquals(4, day7Part1(createBagRulesPart1(getInputDay7(testInputDay7))))
     }
 
     @Test
     fun ` test day 7 part 2  `() {
-        assertEquals(8, 2)
+        assertEquals(32, findAllBags(createBagRulesPart2(getInputDay7(testInputDay7)), "shiny gold bag"))
     }
 }
 
-val testInputDay8 = """
+val testInputDay7 = """
 light red bags contain 1 bright white bag, 2 muted yellow bags.
 dark orange bags contain 3 bright white bags, 4 muted yellow bags.
 bright white bags contain 1 shiny gold bag.

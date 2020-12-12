@@ -1,9 +1,9 @@
 package day9
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-internal class TasksTest{
+internal class TasksTest {
 
     @Test
     fun ` test day 9 part 1  `() {
@@ -12,8 +12,8 @@ internal class TasksTest{
 
     @Test
     fun ` test day 9 part 2  `() {
-        assertEquals(62, findContiguousListForLong(getInputDay9(testInputDay9), validateNumbers(getInputDay9(
-            testInputDay9), 5)))
+        val invalidNumber = validateNumbers(getInputDay9(testInputDay9), 5)
+        assertEquals(62, findContiguousListForLong(getInputDay9(testInputDay9), invalidNumber))
     }
 }
 
